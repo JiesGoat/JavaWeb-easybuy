@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--用户控制器-->
+    <servlet>
+        <servlet-name>UsersServlet</servlet-name>
+        <servlet-class>com.ybj.users.servlet.UsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsersServlet</servlet-name>
+        <url-pattern>/usersServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--后台用户控制器-->
+    <servlet>
+        <servlet-name>UsersManagerServlet</servlet-name>
+        <servlet-class>com.ybj.users.servlet.UsersManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsersManagerServlet</servlet-name>
+        <url-pattern>/usersManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--新闻控制器-->
+    <servlet>
+        <servlet-name>NewsServlet</servlet-name>
+        <servlet-class>com.ybj.news.servlet.NewsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewsServlet</servlet-name>
+        <url-pattern>/newsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--后台新闻控制器-->
+    <servlet>
+        <servlet-name>NewsManagerServlet</servlet-name>
+        <servlet-class>com.ybj.news.servlet.NewsManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewsManagerServlet</servlet-name>
+        <url-pattern>/newsManagerServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--商品控制器-->
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.ybj.product.servlet.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/productServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--后台商品控制器-->
+    <servlet>
+        <servlet-name>ProductManagerServlet</servlet-name>
+        <servlet-class>com.ybj.product.servlet.ProductManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductManagerServlet</servlet-name>
+        <url-pattern>/productManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--商品分类控制器-->
+    <servlet>
+        <servlet-name>ProductCategoryServlet</servlet-name>
+        <servlet-class>com.ybj.productcategory.servlet.ProductCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductCategoryServlet</servlet-name>
+        <url-pattern>/productCategoryServlet</url-pattern>
+    </servlet-mapping>
+    <!--欢迎首页-->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
